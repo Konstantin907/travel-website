@@ -3,9 +3,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-color: #efeeee;
 }
 body{
-    margin-right: 80px;
+    margin-right: 50px;
     margin-left: 50px;
 
 }
@@ -62,6 +63,7 @@ a{
     width: 40%;
 }
 
+
 h4{
     color: #DF6951;
     font-family: 'Poppins', sans-serif;
@@ -78,25 +80,29 @@ h1{
     font-family: 'Poppins', sans-serif;
     margin-top: 27px;
 }
-
+.rectangle{
+    width: 500px;
+    height: 300px;
+    z-index: -1;
+    position: relative;
+    top: 0px;
+    background-color: #F1A501;
+}
 img{
     height: 400px;
     width: 380px;
     z-index: 1;
+    top: 80px;
 }
 
 
 .plane{
     position: relative;
-    top: -400px;
+   top: -400px;
     right: -80px;
     width: 100px;
     height: 80px;
-}
-.plane-second{
-    position: absolute;
-    width: 100px;
-    height: 80px; 
+    z-index: 1;
 }
 
 .hero-buttons{
@@ -138,3 +144,51 @@ font-size: medium;
 .play{
     cursor: pointer;    
 }
+
+/* Categories */
+
+.categories-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.category{
+    text-align: center;
+}
+.heading-category{
+    font-size: 30px;
+}
+.all-categories {   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    margin-top: 60px;
+}
+
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.svg-item{
+    margin: 0 auto;
+    margin-bottom: 29px;
+   
+}
+.item-heading{
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.item-para{
+    color: #5E6282;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; 
+    display: inline;
+}
+
